@@ -1,0 +1,62 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #1e1e2f !important;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none; /* ✅ Remove bullets */
+  padding-left: 0;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  text-decoration: none !important; /* ✅ Remove underline */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.router-link-active {
+  color: #ff9900 !important;
+  text-decoration: none !important; /* ✅ Prevent underline on hover/active */
+}
+
+/* Optional responsive tweaks */
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0.5rem;
+    background-color: #1e1e2f;
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+ 
+}

@@ -1,0 +1,27 @@
+
+<app-navbarn></app-navbarn>
+
+<div class="todo-wrapper">
+  <div class="todo-container">
+    <h2>Todo List</h2>
+
+    <div class="input-box">
+      <input type="text" [(ngModel)]="newTask" placeholder="Input the task you'd like to add." />
+      <button (click)="addTodo()">Add</button>
+    </div>
+
+    <ul class="todo-list">
+      <li *ngFor="let todo of todos">
+        <span [class.done]="todo.completed">{{ todo.text }}</span>
+        <div class="actions">
+          <button class="done" (click)="markDone(todo._id)">✔</button>
+          <button class="delete" (click)="deleteTodo(todo._id)">✖</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>
+

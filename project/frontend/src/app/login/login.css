@@ -1,0 +1,82 @@
+.auth-container {
+  max-width: 400px;
+  margin: 6rem auto;
+  padding: 2.5rem 3rem;
+  background: #ffffffdd;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+}
+
+.auth-container h2 {
+  margin-bottom: 2rem;
+  color: #6a11cb;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.auth-container form input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+.auth-container form input:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+.auth-container form button {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container form button:hover {
+  background-color: #4e0ebd;
+}
+
+.auth-container a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: text-decoration 0.3s ease;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    margin: 3rem 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .auth-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .auth-container form input,
+  .auth-container form button {
+    font-size: 1rem;
+  }
+}

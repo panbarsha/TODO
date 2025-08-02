@@ -1,0 +1,61 @@
+/* Container setup */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 80vh;
+  background: #f5f7fa;
+}
+
+/* Hero section with refined gradient and subtle shadow */
+.hero {
+  background: linear-gradient(135deg, #3a3a85, #2e2e60);
+  color: white;
+  padding: 70px 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.hero:hover {
+  transform: translateY(-6px);
+}
+
+/* Main heading */
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  color: #f59d0f; /* warm golden */
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Paragraph styling */
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #e4e6eb;
+  margin-bottom: 18px;
+  padding: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
